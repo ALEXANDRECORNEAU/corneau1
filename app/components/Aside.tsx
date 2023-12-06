@@ -9,14 +9,14 @@ export default function Aside() {
                 <div>
                     <h2>Dashboard</h2>
                     
-                    <a href="/admin/course">
+                    <a href="/admin/listar_excluir">
                         <Button variant="ghost">
                             <Bars4Icon className="h-4 mr-2" />
                             Listar Impressora
                         </Button>
                     </a>
                     <br />
-                    <a href="/admin/course/new">
+                    <a href="/admin/listar_excluir/cadastrar">
                         <Button variant="ghost">
                             <NewspaperIcon className="h-4 mr-2" />
                             Cadastrar Impressora

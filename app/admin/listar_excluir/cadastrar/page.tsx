@@ -2,7 +2,7 @@ import UploadButton from "@/app/components/UploadButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { sql } from "@vercel/postgres";
-import { useSearchParams } from "next/navigation";
+
 
 export const revalidate =0
 
