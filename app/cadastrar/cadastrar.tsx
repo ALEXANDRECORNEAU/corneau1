@@ -1,4 +1,7 @@
-export default function Header() {
+import { Button } from "@/components/ui/button";
+import { Bars4Icon, HomeIcon, ListBulletIcon, NewspaperIcon } from "@heroicons/react/24/outline";
+
+export default function cadastrar() {
     return (
         <header className="text-center text-white py-8 border-b border-[#4d4d4d] md:flex itens-center justify-between">
             <h4 className="text-center">Impressoras</h4>
@@ -15,4 +18,8 @@ export default function Header() {
             </nav>
         </header>
     )
+
+
+
+
 }
