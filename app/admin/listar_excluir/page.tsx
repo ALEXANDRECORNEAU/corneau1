@@ -8,10 +8,10 @@ export default async function ListCourse() {
     async function deleteCourse(formData: FormData){
         "use server"
         const id = formData.get("id") as string;
-        await sql`DELETE from courses where id=${id}`
+        await sql`DELETE from impressora where id=${id}`
         revalidatePath("/admin/course")
     }
-    const { rows } = await sql`SELECT * from courses`;
+    const { rows } = await sql`SELECT * from impressora`;
     return (
         <div>
             <h1 className="text-center ">Lista de Impressora</h1>
@@ -24,7 +24,7 @@ export default async function ListCourse() {
                     {
                         rows.map((course) => {
                             return (
-                                <tr key={course.id}><td>{course.title}</td> <td>{course.description}</td> 
+                                <tr key={course.id}><td>{course.marca}</td> <td>{course.modelo}</td> 
                                 <td>
                                     <form >
                                      <input type="text" hidden name="id" value={course.id}/>   
