@@ -1,8 +1,7 @@
-import UploadButton from "@/app/components/UploadButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { sql } from "@vercel/postgres";
-
+import { useSearchParams } from "next/navigation";
 
 export const revalidate =0
 
@@ -30,7 +29,7 @@ export default function NewCourse({
                 <Input type="text" name="title" placeholder="Digite o marca da impressora"/><br/>
                 <Input type="text" name="description" placeholder="Digite modelo da impressora"/> <br/>
                 <br/>
-                <UploadButton /> <br/>
+           
                 <Button formAction={saveCourse} className="text-white">Salvar</Button>
             </form>
         </div>

@@ -6,7 +6,7 @@ export default function Header() {
                 <a className="hover:text-[#00e77f]" href="admin/listar_excluir/cadastrar">
                     Cadastrar Impressora &nbsp;
                 </a>
-                <a className="hover:text-[#00e77f]" href="#admin/listar_excluir">
+                <a className="hover:text-[#00e77f]" href="#admin/listar_excluir/cadastrar">
                     Listagem &nbsp;
                 </a>
                 <a className="hover:text-[#00e77f]" href="#contato">
